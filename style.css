@@ -1,0 +1,44 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+.container{
+   border:1px Solid;
+   border-color: black;
+   background-color: bisque;
+   width:400px;
+}
+#Txt{
+
+ padding: 20px;
+ height:10px;
+ width:300px;
+ border:1px solid;
+ margin:25px;
+ font-size: large;
+}
+
+.btn{
+ height:50px;
+ width:300px;
+ border: 1px solid;
+ background-color: black;
+ font-size: medium;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ margin:2px 25px;
+ padding:0px;
+ color: aqua;
+ text-align: center;
+}
+
+#result{
+   height:80px;
+   width:350px;
+   border:1px solid;
+   border-color: black;
+   margin:10px 25px;
+   color:black;
+   background-color:rgb(134, 120, 188);
+
+}
