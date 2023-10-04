@@ -8,22 +8,20 @@
 </head>
 <body>
     
+<div class="flex">
+  <div class="container">
+    <div id="array_display" class="arr"></div>
+    <input type="text" id="input" class="in" placeholder="Enter the string">
+    <button class="btn" onclick="addElement()">Add String</button>
+    <input type="number" id="num_input" class="in" placeholder="Enter the number">
+    <button class="btn" onclick="addNum()">Add Number</button>
+    <button class="btns" onclick="removeElement()">Remove Element</button>
+    <button class="btns" onclick="sortElement()">Sort Element</button>
+    <button class="btns" onclick="reverseElement()">Reverse Element</button>
+    
+    <button class="btns" onclick="findNumAndFilter()">Find and filter</button>
     <script src="script.js"> </script>
-    <script>
-        const a=["hi","welcome"]
-        let result=document.getElementById("result")
-    </script>
-    <div class="flex">
-        <div class="container">
-            <input type = "text" placeholder="Enter the Sentence" id="Txt">
-            <div id="result" onclick="display()"></div>
-            <button class= "btn" onclick = "addElement()">Add Element to array</button> 
-            <button class = "btn" onclick="removeElement()">Remove Element</button>
-            <button class= "btn" onclick = "filterElement()">Filter Element from array</button> 
-            <button class = "btn" onclick="findAndReturn()">Find and return the Element</button>
-            <button class= "btn" onclick = "reverse()">Reverse the Sentence</button>
-            <button class = "btn" onclick="sort()">Sort the Elements</button>
-        </div>
-    </div>
+  </div>
+</div>
 </body>
 </html>

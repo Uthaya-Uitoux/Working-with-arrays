@@ -1,15 +1,53 @@
-let array=["hi","welcome"]
-let b=document.getElementById("result");
-
-function display(){
-    var c=array.toString();
-    b.innerHTML=c;
-}
+const array=["hi",45,true,"element","get05"];
+console.log(array);
+//Display Array value into Inital Display
+const dis_arry = document.querySelector("#array_display"); 
+dis_arry.innerHTML = array.toString();
 
 
 function addElement(){
-    //console.log(a)
-    let text=document.getElementById("Txt").value
-    array.push(text)
-    console.log(array)
+    let element = document.getElementById("input").value
+    //console.log(element)
+    array.push(element)  
+    document.getElementById("input").value = "";
+    let results=document.querySelector("#array_display");
+    results.textContent =array;
+    
+}
+function addNum(){
+    let element = document.getElementById("num_input").value
+    //console.log(element)
+    array.push(Number(element));
+    document.getElementById("input").value = "";
+    let results=document.querySelector("#array_display");
+    results.textContent = array;
+}
+function removeElement(){
+    let element = document.getElementById("input").value
+    console.log(element)
+    array.shift(element);
+    let results=document.querySelector("#array_display");
+    results.textContent = array;
+}
+function sortElement(){
+    let element = document.getElementById("input").value
+    console.log(element)
+    array.sort(); 
+    let results=document.querySelector("#array_display");
+    results.textContent = array;
+}
+function reverseElement(){
+    let element = document.getElementById("input").value
+    console.log(element);
+    array.sort();
+    array.reverse(); 
+    let results=document.querySelector("#array_display");
+    results.textContent = array;
+}
+function findNumAndFilter(){
+    console.log('Filter Array => ',array);
+    let find= array.filter(element => typeof element === 'number');
+    console.log('Filter Value => ',find.toString());
+    /* let results=document.querySelector("#array_display");
+    results.textContent = array; */
 }
